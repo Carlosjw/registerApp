@@ -1,6 +1,7 @@
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"; // importante componente do pr´roprio React
 
 function Item({ marca, anolancamento }) {
+  // destructing do props
   return (
     <>
       <li>
