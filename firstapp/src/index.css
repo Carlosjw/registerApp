@@ -1,5 +1,6 @@
 body {
   padding: 50px;
+  padding-bottom: 500px;
   background-color: #efefef;
 }
 
@@ -7,7 +8,7 @@ h1{
   color: #333;
 }
 
-p:hover {
+p {
   background-color: #999;
   font-weight: bold;
   color: white;

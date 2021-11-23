@@ -1,11 +1,11 @@
-import './App.css';
-import SayMyName from './components/SayMyName'
-import Pessoa from './components/Pessoa'
-import Frase from './components/Frase'
+import "./App.css";
+import SayMyName from "./components/SayMyName";
+import Pessoa from "./components/Pessoa";
+import Frase from "./components/Frase";
+import List from "./components/List";
 
 function App() {
-
-  const name = 'Maria'
+  const name = "Maria";
 
   return (
     <div className="App">
@@ -14,8 +14,13 @@ function App() {
       <SayMyName name="Carlos" />
       <SayMyName name="Solange" />
       <SayMyName name={name} />
-      <Pessoa name="Carlos" idade="34" profissao="TI" foto="https://via.placeholder.com/150"
+      <Pessoa
+        name="Carlos"
+        idade="34"
+        profissao="TI"
+        foto="https://via.placeholder.com/150"
       />
+      <List />
     </div>
   );
 }
