@@ -3,12 +3,13 @@ import { useState } from "react"; // importando o hook useState do React
 function Form() {
   function cadastrarUsuario(e) {
     // Evento de execução
-    e.preventDefault(); // Para o envio do formulário pro back-end e mantém no front
-    console.log(name);
-    console.log("Cadastrou o usuário.");
+    e.preventDefault(); // Pára o envio do formulário pro back-end e mantém no front
+    // console.log(name);
+    console.log(`Usuário "${name}" foi cadastrado com a senha "${password}".`);
   }
   // Usando o hook useState
   const [name, setName] = useState(); // método que inicia quando o componete for incializado
+  const [password, setPassword] = useState(); // método que inicia quando o componete for incializado
 
   return (
     <div>
@@ -21,6 +22,9 @@ function Form() {
             id="name"
             name="name"
             placeholder="Digite o seu nome"
+            // value={name} // default value do useState
+            //cada letra digitado no campo modificará o valor do state
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div>
@@ -30,8 +34,7 @@ function Form() {
             id="password"
             name="password"
             placeholder="Digite a sua senha"
-            //cada letra digitado no campo modificará o valor do state
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <div>
