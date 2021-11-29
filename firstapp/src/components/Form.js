@@ -22,7 +22,7 @@ function Form() {
             id="name"
             name="name"
             placeholder="Digite o seu nome"
-            // value={name} // default value do useState
+            // value={name} // default value do useState: útil quando formos editar formuário preenchido anteriormente
             //cada letra digitado no campo modificará o valor do state
             onChange={(e) => setName(e.target.value)}
           />
